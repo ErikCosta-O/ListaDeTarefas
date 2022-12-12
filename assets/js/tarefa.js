@@ -18,6 +18,7 @@ novaTarefa.addEventListener('click',(evento) => {
 //criando o elemento botão
 const botao =() =>{
     const botaoConclui = document.createElement('button')
+    if (botaoConclui.classList) botaoConclui.classList.add('finalizar')
     botaoConclui.innerHTML =('Finalizar')
     botaoConclui.addEventListener('click',concluirTarefa)
     return botaoConclui
@@ -32,6 +33,7 @@ const concluirTarefa = (evento) =>{
 //fazendo o botão de deletar
 const botaoExclui = () =>{
     const deletaBotao = document.createElement('button')
+    if (deletaBotao.classList) deletaBotao.classList.add('deletar')
     deletaBotao.innerHTML = 'deletar'
     deletaBotao.addEventListener('click',deletarTarefa)
     return deletaBotao

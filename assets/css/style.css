@@ -77,29 +77,33 @@ body {
   font-size: 1.2rem;
   padding: 0.5rem 2rem;
 }
-.task.done .content {
-  text-decoration: line-through #f25f5c 5px;
+.task.done .content{
+  text-decoration: line-through #04e762 5px;
+  transition: 0.4s;
 }
 .list button{
   border-radius: 1vh;
   padding: 0.75rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   border: 1px;
   background: #bfc0c0;
+  border: #353535 3px solid;
   text-transform: uppercase;
   cursor: pointer;
   position: relative;
   left: 30px;
   margin: 5px;
 }
-.list button:hover{
+.deletar:hover{
+  background-color:#f21b3f;
   color: #edf2f4;
-  background-color: #353535;
-  transition: 0.2s;
+  transition: 0.4s;
 }
-.list button:active{
-  color: #353535;
-  background-color: #f25f5c;
-  border-radius: 1.9vh;
-  transition: 0.2s;
+.finalizar:hover{
+  background-color: #04e762;
+  transition: 0.4s;
 }
+.finalizar:active{
+  background-color: #bfc0c0;
+}
+
