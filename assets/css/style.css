@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  transition: all 0.2s;
+  scroll-behavior: smooth;
+  background-color: #f0edee;
+}
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  margin-top: 10vh;
+}
+.todo-list {
+  background-color: #3772ff;
+  border: #353535 4px solid;
+  padding: 1rem;
+  min-width: 400px;
+  transition: 0.2s;
+  min-height: 350px;
+  border-radius: 1vh;
+}
+.title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 1.9rem;
+  color: #011627;
+  text-align: center;
+}
+.form {
+  display: flex;
+  justify-content: center;
+}
+.form-input, .form-button {
+  border-radius: 1vh;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #e6e8e6;
+}
+.form-input {
+  outline: none;
+  color: #353535;
+  border-color: transparent;
+}
+.form-button {
+  border: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 1.25rem;
+}
+.form-button:hover {
+  color: #edf2f4;
+  background-color: #353535;
+  transition: 0.2s;
+}
+.form-button:active{
+  color: #353535;
+  background-color: #9ef01a;
+  border-radius: 1.9vh;
+  transition: 0.2s;
+}
+.list {
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+.task {
+  background-color: #f0edee;
+  border: #353535 3px solid;
+  border-radius: 1vh;
+  color: #353535;
+  margin-top: 3px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  padding: 0.5rem 2rem;
+}
+.task.done .content {
+  text-decoration: line-through #f25f5c 5px;
+}
+.list button{
+  border-radius: 1vh;
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  border: 1px;
+  background: #bfc0c0;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  left: 30px;
+  margin: 5px;
+}
+.list button:hover{
+  color: #edf2f4;
+  background-color: #353535;
+  transition: 0.2s;
+}
+.list button:active{
+  color: #353535;
+  background-color: #f25f5c;
+  border-radius: 1.9vh;
+  transition: 0.2s;
+}
